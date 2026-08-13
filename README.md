@@ -1,11 +1,13 @@
 # canvas
 
 ## Container Variables
-- `BIND_ADDR`: Set the listening address and port (default: `0.0.0.0:4404`)
-- `ADMIN_TOKEN`: Required token for authenticating admin API endpoints
-- **Volume Mappings:**
-  - `/app/config`: Map this directory to inject custom configuration files
-  - `/app/data`: Map this directory for persistent data storage
+- BIND_ADDR: 0.0.0.0:4404
+- ADMIN_TOKEN: Authentication token
+- /app/config: Map this directory to inject custom configuration files
+- /app/data: Map this directory for persistent data storage
+
+## Image
+`studio2201/canvas:latest`
 
 ## Screenshots
 *(Screenshots will be placed here)*
