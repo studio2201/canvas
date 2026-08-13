@@ -1,0 +1,17 @@
+[package]
+name = "backend"
+version = "0.1.1"
+edition = "2024"
+
+[dependencies]
+common = { workspace = true }
+shared-backend = { workspace = true }
+tokio = { workspace = true }
+axum = { workspace = true }
+futures = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tower-http = { workspace = true }
+uuid = { workspace = true }

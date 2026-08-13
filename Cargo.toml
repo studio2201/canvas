@@ -1,9 +1,30 @@
-[package]
-name = "canvas"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    "common",
+    "backend",
+    "frontend"
+]
+resolver = "2"
 
-[dependencies]
+[workspace.dependencies]
 shared-core = { path = "../shared-assets/shared-rust/shared-core" }
 shared-backend = { path = "../shared-assets/shared-rust/shared-backend" }
 shared-frontend = { path = "../shared-assets/shared-rust/shared-frontend" }
+
+common = { path = "common" }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+axum = { version = "0.8", features = ["ws", "macros"] }
+yew = { version = "0.23", features = ["csr"] }
+gloo-net = "0.3"
+wasm-bindgen-futures = "0.4"
+futures = "0.3"
+futures-util = "0.3"
+uuid = { version = "1.10", features = ["v4", "js", "serde"] }
+web-sys = { version = "0.3.98", features = ["WebSocket", "MessageEvent", "ErrorEvent", "HtmlCanvasElement", "CanvasRenderingContext2d", "MouseEvent", "HtmlElement", "Element"] }
+wasm-bindgen = "0.2"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+tower-http = { version = "0.6", features = ["fs", "cors"] }

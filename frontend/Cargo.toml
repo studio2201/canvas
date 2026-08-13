@@ -1,0 +1,20 @@
+[package]
+name = "frontend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+common = { workspace = true }
+shared-core = { workspace = true }
+shared-frontend = { workspace = true }
+yew = { workspace = true }
+serde = { workspace = true }
+js-sys = "0.3"
+serde_json = { workspace = true }
+gloo-net = { workspace = true }
+wasm-bindgen-futures = { workspace = true }
+futures = { workspace = true }
+futures-util = { workspace = true }
+uuid = { workspace = true }
+web-sys = { workspace = true }
+wasm-bindgen = { workspace = true }
