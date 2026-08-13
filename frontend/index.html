@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Canvas App</title>
+    
+    <link rel="manifest" href="manifest.json" />
+    
+    <link data-trunk rel="copy-file" href="manifest.json" />
+    <link data-trunk rel="copy-file" href="service-worker.js" />
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((reg) => console.log('Service worker registered.', reg))
+                    .catch((err) => console.log('Service worker registration failed.', err));
+            });
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
