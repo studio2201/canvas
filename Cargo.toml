@@ -1,0 +1,9 @@
+[package]
+name = "canvas"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+shared-core = { path = "../shared-assets/shared-rust/shared-core" }
+shared-backend = { path = "../shared-assets/shared-rust/shared-backend" }
+shared-frontend = { path = "../shared-assets/shared-rust/shared-frontend" }
